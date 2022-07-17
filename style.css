@@ -1,4 +1,6 @@
-
+body {
+  background-color: #dddda0;
+}
 
 /* the digits of pi in the background */
 #pi {
@@ -14,5 +16,10 @@
   word-wrap: break-word;
   overflow: hidden;
   color: rgba(0, 0, 0, 0.1);
+  line-height: 1em;
+  text-align: center;
 }
 
+.head-logo {
+  width: 1.5em;
+}
