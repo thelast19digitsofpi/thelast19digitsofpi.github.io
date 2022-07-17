@@ -1,5 +1,5 @@
 body {
-  background-color: #ddffee;
+  background-color: #effff7;
 }
 
 /* the digits of pi in the background */
@@ -15,7 +15,7 @@ body {
   font-size: 3.14em;
   word-wrap: break-word;
   overflow: hidden;
-  color: rgba(0, 0, 0, 0.075);
+  color: rgba(0, 0, 0, 0.05);
   line-height: 1em;
   text-align: center;
 }
