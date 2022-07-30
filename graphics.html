@@ -79,7 +79,43 @@
         </div>
       </div>
       
-      
+      Over time, the images started to get more and more mathematically interesting:
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-12 col-md-auto" align="center">
+            <img src="//cdn.glitch.global/0a044b72-cffc-4307-8737-e9e3bc16f156/round_free.png?v=1659191162474" class="img-fluid rounded-start" alt="Old card for a card game" style="display: inline" />
+          </div>
+          <div class="col-12 col-md" style="overflow: scroll; max-height: 350px">
+            <div class="card-body">
+              <h5 class="card-title">Python Code <small>(public domain)</small></h5>
+              <pre style="white-space: pre-wrap">
+cards = list(range(1,13))
+
+f = open("luck_sheet.svg", "w");
+
+width = 320
+height = 500
+cols = 5
+rows = max(2, (len(cards) // cols) + 1)
+
+f.write("""&lt;svg width="{0}" height="{1}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"&gt;""".format(width * cols, height * rows));
+
+cards = ["luck_{}.svg.png".format(c) for c in cards] + ["result_blank.png"]
+
+num = 0
+for card in cards:
+    x = num % cols
+    y = num // cols
+    f.write("""    &lt;image xlink:href="file:///media/owner/GameFiles/newd2/SuccessFail/{}" x="{}" y="{}" width="{}" height="{}" /&gt;\n""".format(card, x * width, y * height, width, height))
+    num += 1
+
+f.write("&lt;/svg&gt;")
+f.close()</pre>
+              
+            </div>
+          </div>
+        </div>
+      </div>
       
       <h4 class="text-danger">
         This webpage is under construction. Please come back later.
