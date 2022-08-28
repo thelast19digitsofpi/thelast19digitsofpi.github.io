@@ -20,7 +20,9 @@ document.getElementById("pi").textContent = PI_DIGITS;
   nav.className = "navbar navbar-expand-lg bg-light";
   nav.innerHTML = `
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">
+      <img src="https://cdn.glitch.global/0a044b72-cffc-4307-8737-e9e3bc16f156/hyperbolic_logo.png?v=1658073486947" height="24" style="border-radius: 12px" />
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -32,13 +34,14 @@ document.getElementById("pi").textContent = PI_DIGITS;
     </div>
   </div>`;
   
-  const linkList = nav.getElementById("navbar-list");
+  const linkList = nav.getElementsByClassName("navbar-nav")[0];
   for (let pageName in navLinks) {
     const li = document.createElement("li");
     li.innerHTML = `<a class="nav-link" aria-current="page" href="${navLinks[pageName]}">${pageName}</a>`;
-    navLinks.appendChild(li);
+    linkList.appendChild(li);
   }
   
   const mainContainer = document.querySelector("body > .container");
-  mainContainer.prependChild(nav);
+  console.warn(mainContainer);
+  mainContainer.prepend(nav);
 })();
