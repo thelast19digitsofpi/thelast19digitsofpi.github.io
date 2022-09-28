@@ -13,7 +13,9 @@ document.getElementById("pi").textContent = PI_DIGITS;
 (function() {
   const navLinks = {
     "Home": "/index.html",
-    "Mathematics": "/maths.html"
+    "Mathematics": "/maths.html",
+    "Music": "/music.html",
+    "Contact": "/contact.html"
   };
   
   const nav = document.createElement("nav");
@@ -41,7 +43,7 @@ document.getElementById("pi").textContent = PI_DIGITS;
     linkList.appendChild(li);
   }
   
-  const mainContainer = document.querySelector("body > .container");
+  const mainContainer = document.querySelector("body");
   console.warn(mainContainer);
   mainContainer.prepend(nav);
 })();
