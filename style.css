@@ -9,13 +9,13 @@ body {
   z-index: -10000;
   left: 0;
   right: 0;
-  top: 0;
+  top: 50px;
   bottom: 0;
   font-family: "Ubuntu Mono", monospace;
   font-size: 3.14em;
   word-wrap: break-word;
   overflow: hidden;
-  color: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.04);
   line-height: 1em;
   text-align: center;
 }
