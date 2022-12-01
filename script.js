@@ -15,7 +15,7 @@ document.getElementById("pi").textContent = PI_DIGITS;
     "Home": "/index.html",
     "Mathematics": "/maths.html",
     "Music": "/music.html",
-    "Contact": "/contact.html"
+    //"Contact": "/contact.html"
   };
   
   const nav = document.createElement("nav");

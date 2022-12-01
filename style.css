@@ -23,3 +23,7 @@ body {
 .head-logo {
   width: 1.5em;
 }
+
+a[target="_blank"] {
+  
+}
