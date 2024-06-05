@@ -15,6 +15,7 @@ document.getElementById("pi").textContent = PI_DIGITS;
     "Home": "/index.html",
     "Mathematics": "/maths.html",
     "Music": "/music.html",
+    "Games": "/games.html",
     //"Contact": "/contact.html"
   };
   
